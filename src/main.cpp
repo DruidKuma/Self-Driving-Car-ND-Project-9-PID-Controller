@@ -33,8 +33,8 @@ int main()
   uWS::Hub h;
 
   double K_p = 0.15;  // proportional
-  double K_i = 0;     // integral
-  double K_d = 3.2;   // differential 
+  double K_i = 0.0015;     // integral
+  double K_d = 3.5;   // differential 
 
   PID pid;
   pid.Init(K_p, K_i, K_d);
